@@ -1,0 +1,8 @@
+<!-- my_template.html -->
+<form method="post">
+    <h3 style="color:red;">Please fill your details to start your search</h3>
+    <h3>fill your library member id and personal details (select checkbox if from staff)</h3>
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
